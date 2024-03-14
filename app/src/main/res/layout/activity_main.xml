@@ -3,17 +3,58 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="36dp"
         android:text="클릭해보세요~"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="한국폴리텍대학 서울정수캠"
+        android:backgroundTint="@color/red"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:layout_editor_absoluteX="144dp" />
+
+    <Button
+        android:id="@+id/button911"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="911 전화하기"
+        android:backgroundTint="@color/orange"
+        app:layout_constraintTop_toBottomOf="@+id/buttonHome"
+        tools:layout_editor_absoluteX="144dp" />
+
+    <Button
+        android:id="@+id/buttonGallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Gallery"
+        android:backgroundTint="@color/yellow"
+        app:layout_constraintTop_toBottomOf="@+id/button911"
+        tools:layout_editor_absoluteX="151dp" />
+
+    <Button
+        android:id="@+id/buttonfinish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="종료"
+        android:backgroundTint="@color/green"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGallery"
+        tools:layout_editor_absoluteX="151dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
